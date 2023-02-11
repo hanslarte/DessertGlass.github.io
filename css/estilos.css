@@ -39,7 +39,7 @@ img{
     height: 100%;
     position: absolute;
     z-index: 1;
-    background-image: url(../img/fondo.jpg);
+    background-image: url("../img/fondo.jpg");
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -153,7 +153,7 @@ img{
 /*-----------------------------*/
 .content-productoRelacionado{
     width: 100%;
-    background-image: url(/img/fondo.jpg);
+    background-image: url("../img/fondo.jpg");
     background-position: center;
     background-size: cover;
 }
