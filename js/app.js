@@ -12,18 +12,18 @@ for(let i=0;cambioImg.length>i;i++){
         principalImg.src=imagen;
     });
 }
-
+/*
 let precioCalcular=15;
 let precioCalcular2=13;
 let preDg=100;
 let preDp=70;
-let cantidad=document.getElementById('can');
-let cambio=document.querySelectorAll('.can2');
 let precio=document.getElementById('precio');
 let pre=document.querySelector('.span');
 let predg=document.querySelector('.dg');
 let predp=document.querySelector('.dp');
-
+*/
+let cantidad=document.getElementById('can');
+let cambio=document.querySelectorAll('.can2');
 function calcularPrecio(nombre){
 
     let p;
@@ -39,7 +39,7 @@ function calcularPrecio(nombre){
         p=70;
         p2=70;
     }
-    else if(nombre.textContent=="ChessCake Glass"){
+    else if(nombre.textContent=="Cheesecake Glass"){
 
         p=13;
         p2=13;
