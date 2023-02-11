@@ -1,0 +1,20 @@
+[
+    {
+    "nombre":"Cake Glass",
+    "descri":"Glass Cake es un pastel en un vaso, en la parte superior es posible colocar cualquier inscripción, y en la parte interna tendras una variedad de sabores a escoger.",
+    "precio":15,
+    "cantidad":1,
+    "sabores":["chocolate","vainilla"],
+    "img":"/img/cake.jpg",
+    "img2":"/img/m2.jpeg"
+    },
+    {
+    "nombre":"ChessCake Glass",
+    "descri":"Glass Cake es un pastel en un vaso, en la parte superior es posible colocar cualquier inscripción, y en la parte interna tendras una variedad de sabores a escoger.",
+    "precio":13,
+    "cantidad":1,
+    "sabores":["limon","maracuya","vainilla"],
+    "img":"/img/chesscake.jpg",
+    "img2":"/img/m3.jpeg"
+    }
+]

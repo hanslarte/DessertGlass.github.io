@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desayuno Pequeño</title>
+        <link rel="stylesheet" href="/css/esti.css">
+    </head>
+    <body>
+        <div class="content-product">
+            <div class="logo">
+                <img src="/img/logo.png" alt="">
+                <a href="/index.html"><img src="/img/regresar.png" alt=""></a>
+            </div>
+
+            <div class="content-product-descri">
+                <div class="content-img">
+                    <img class="principalImg" src="/img/dp.jpg" alt="">
+                    <div class="sub-img">
+                        <img class="cambioImg" src="/img/dp2.png" alt="">
+                        <img class="cambioImg" src="/img/dp.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-content-info">
+                    <div class="product-info">
+                        <h2 id="tituloProducto">Desayuno Pequeño</h2>
+                        <p>Sorprende con este desayuno que contiene:</p>
+                        <ul>
+                            <li>Jugo de durazno 300ml</li>
+                            <li>Brownies</li>
+                            <li>Frutos secos</li>
+                            <li>Capuccino Shake</li>
+                            <li>Croissant de jamon y queso</li>
+                        </ul>
+                        <h3>Separar con 24 horas de anticipación</h3>
+                    </div>
+                    <div class="product-personalizar">
+                        <div class="cantidad-product">
+                            <p>Cantidad: </p>
+                            <div class="cantidad-main">
+                                <div class="item-can can2">-</div>
+                                <div id="can" class="item-can">1</div>
+                                <div class="item-can can2">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-product-precio">
+                        <p>Precio: <span class="span dg dp" id="precio">s/70.00</span></p>
+                        <span id="botonComprar">Comprar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="main-footer">
+                <div class="content-footer">
+                    <div class="footer-horario">
+                        <h2>Horarios de Atención</h2>
+                        <p>Martes a Viernes
+                            8:00 am - 5:00 pm</p>
+                        <p>Sábados y Domingos
+                            10:00 am - 4:00 pm</p>
+                    </div>
+                    <div class="footer-contactos">
+                        <h2>Contactanos</h2>
+                        <p>920 572 117</p>
+                        <p>yanay.sac@gmail.com</p>
+    
+                        <h2 class="medio-pago">Medios de Pago</h2>
+                        <img src="/img/plin.png" alt="">
+                        <img src="/img/yape.png" alt="">
+                    </div>
+                    <div class="footer-redes">
+                        <h2>Siguenos</h2>
+                        <a href="https://www.facebook.com/Yanay.sac?mibextid=ZbWKwL
+                        ">
+                            <img src="/img/facebook.png" alt="">
+                        </a>
+                        <a href="https://instagram.com/yanay.sac?igshid=YmMyMTA2M2Y=
+                        ">
+                            <img src="/img/instagram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="derechos">
+                <p>Yanay ° Todos los Derechos Reservados</p>
+            </div>
+        </footer>
+
+        <script src="/js/app.js"></script>
+        <script>
+
+            document.querySelector('#botonComprar').addEventListener('click', e => {
+
+                e.preventDefault();
+    
+                //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
+                const telefono = '51961463311';
+
+                let cantidadSeleccionada=cantidad.textContent;
+    
+                const href = `Bienevenido a Yanay su pedido es el siguiente:%0A%0A ${titulo.textContent}%0A Cantidad Seleccionada: ${cantidadSeleccionada}%0A  Monto a Pagar: ${precio.textContent}`;
+    
+                let url = `https://api.whatsapp.com/send?phone=${telefono}&text=${href}`;
+    
+                window.open(url);
+            });
+
+            </script>
+    </body>
+</html>
